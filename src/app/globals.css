@@ -44,7 +44,6 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scrollbar-gutter: stable;
 }
 
 body {
@@ -52,7 +51,6 @@ body {
   color: var(--color-vault-text);
   font-family: var(--font-mono), ui-monospace, monospace;
   overflow-x: hidden;
-  width: 100%;
 }
 
 /* Scrollbar styling */
