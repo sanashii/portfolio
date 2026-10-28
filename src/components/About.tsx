@@ -26,9 +26,10 @@ export default function About() {
                 </p>
                 <p className="text-vault-text text-sm leading-relaxed mb-4">
                   Currently at <span className="text-vault-blue-glow">EarthChimp</span> (Dublin, Ireland),
-                  where I own the full automation stack — from a 3-tier affiliate discovery
-                  pipeline using Thompson Sampling to a customer sentiment analysis system
-                  processing 4,300+ records with Claude AI.
+                  where I build and run the AI automation behind influencer outreach, customer
+                  service, Amazon monitoring, reporting and the storefront — human-in-the-loop
+                  LLM drafting, YouTube creator discovery, and self-healing pipeline monitors,
+                  shipped across ~1,700 commits in six months.
                 </p>
                 <p className="text-vault-text text-sm leading-relaxed">
                   Previously at <span className="text-vault-blue-glow">GoTeam / Multiplai.tech</span> as

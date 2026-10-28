@@ -2,12 +2,52 @@ import { SectionHeader } from "./About";
 
 const proprietaryProjects = [
   {
-    title: "Affiliate Discovery Pipeline",
-    subtitle: "Autonomous 3-Workflow System",
+    title: "Influencer Outreach Copilot",
+    subtitle: "Human-in-the-Loop LLM Drafting",
     description:
-      "Designed and shipped a 3-tier affiliate discovery system from scratch through 4 stakeholder-driven design iterations. Features Thompson Sampling with epsilon-greedy exploration, LLM-based screening, and self-perpetuating compounding loops that grew verified US Anchors from 0 to 40+ from a single seed batch.",
-    impact: "Reduced third-party API costs from $200+/run to <$5/run (~$22/year all-in)",
-    tech: ["n8n", "Python", "Claude AI", "Google Sheets API", "Apify", "Thompson Sampling"],
+      "AI system that drafts replies to influencer emails across every stage — first reply, follow-ups, negotiation, product shipping and content-posted checks — with a person approving each draft. Follow-up cadence rules nudge quiet leads, auto-drop stale ones, cap sends, and stop the moment a human closes a task. A daily invariants monitor checks pipeline state and repairs or flags cards that drift out of sync.",
+    impact: "Drafter retrained from team feedback using approve-rate tracking and an exemplar pack",
+    tech: ["Claude API", "Python", "n8n", "ClickUp API", "Instantly", "Klaviyo"],
+  },
+  {
+    title: "YouTube Creator Discovery Engine",
+    subtitle: "Multi-Lane Discovery + LLM Fit-Screen",
+    description:
+      "Multi-lane discovery pipeline — keyword search, similar-channel mining, similar-videos, cluster queries and collab mining — feeding an LLM fit-screen with AI-content detection as a signal. A multi-armed-bandit allocator (Thompson Sampling) spends a limited API credit budget across lanes. Clean-room experiments measured lead quality and dedup rates, reported back to the ops manager.",
+    impact: "Reduced third-party API costs from $200+/run to <$5/run",
+    tech: ["Python", "YouTube Data API", "Claude AI", "Thompson Sampling", "n8n", "Apify"],
+  },
+  {
+    title: "Customer Service Automation",
+    subtitle: "AI Triage Agent + Review Drafting",
+    description:
+      "AI triage agent for the helpdesk with a canary and retry for silent failures and a detector that catches model refusals. Complaint and replacement pipelines validate data shape and alert staff when something is stuck. Review responses are AI-drafted and pushed to the review platform as drafts for a person to approve.",
+    impact: "Silent failures and refusals caught automatically instead of by customers",
+    tech: ["Claude AI", "Python", "n8n", "Richpanel", "Schema Validation"],
+  },
+  {
+    title: "UK/EU Storefront Launch",
+    subtitle: "Shopify Liquid + Accessibility",
+    description:
+      "Custom Liquid sections for a UK/EU brand launch: multi-market pricing, a currency switcher, geo-routing popups, German translations, review layouts and comparison tables. Followed with an accessibility and performance pass, Lighthouse improvements and validated Rich Results.",
+    impact: "WAVE accessibility errors cut from 37 to 0",
+    tech: ["Shopify Liquid", "Shopify Admin API", "Storefront API", "JavaScript", "CSS"],
+  },
+  {
+    title: "Amazon Monitoring + Data Warehouse",
+    subtitle: "Marketplace Watch & Unified Data",
+    description:
+      "Nightly monitor that catches other sellers hijacking listings, a listing image snapshot/diff tool, and product-family integrity checks across US/UK/EU marketplaces. A Postgres/Supabase warehouse unifies email, Shopify, Amazon and review data with Metabase dashboards, and mines reviews into a glossary of the words customers actually use.",
+    impact: "Listing hijacks and image changes surfaced overnight across every market",
+    tech: ["Amazon SP-API", "Supabase", "PostgreSQL", "Metabase", "Python"],
+  },
+  {
+    title: "Self-Filling Scorecards",
+    subtitle: "Reporting & Dashboards",
+    description:
+      "Weekly scorecards that populate themselves from Amazon Ads, Meta Graph, Shopify and Google Sheets APIs, a customer-sentiment \"Pulse\" dashboard, a daily ops report, and a game-styled pipeline map so the team can see where every lead sits.",
+    impact: "Weekly reporting runs hands-off from four data sources",
+    tech: ["Amazon Ads API", "Meta Graph API", "Shopify API", "Google Sheets API", "Python"],
   },
   {
     title: "Customer Feedback DB + AI Sentiment",
@@ -21,9 +61,9 @@ const proprietaryProjects = [
     title: "Infrastructure & SRE",
     subtitle: "Production Environment Hardening",
     description:
-      "Root-caused a multi-day production outage where schedule triggers fired ~745 executions/sec, growing the DB from 14MB to 2.2GB. Built size-adaptive auto-prune scripts, hostname-guard patterns for 20+ cron entries, SSH key rollouts, auditd monitoring, and GitHub org migration with proper access controls.",
+      "Root-caused a multi-day production outage where schedule triggers fired ~745 executions/sec, growing the DB from 14MB to 2.2GB. Built size-adaptive auto-prune scripts, hostname-guard patterns for 20+ cron entries, SSH key rollouts, auditd monitoring, and GitHub org migration with proper access controls. Ongoing near-daily on-call: fixes for retry and 429 rate-limit storms, double-send guards, cron heartbeats and missed-run detection, OAuth token rotation, plus shared agent memory and context word-budget tooling for the team's Claude Code setup.",
     impact: "Zero-downtime operations after hardening; eliminated cross-server duplicate fires",
-    tech: ["Docker", "Nginx", "Let's Encrypt", "Bash", "auditd", "fail2ban", "GitHub"],
+    tech: ["Docker", "Nginx", "Let's Encrypt", "Bash", "Linux/cron", "Claude Code", "GitHub"],
   },
   {
     title: "Security & Compliance Program",

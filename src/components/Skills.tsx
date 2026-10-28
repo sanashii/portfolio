@@ -6,7 +6,7 @@ const skillCategories = [
   {
     title: "Automation & LLM Orchestration",
     icon: "//",
-    skills: ["n8n (Self-hosted)", "Make.com", "Prompt Engineering", "LLM Pipelines (Claude, GPT-4)", "Agentic Workflows"],
+    skills: ["n8n (Self-hosted)", "Make.com", "Claude API", "Claude Code (Subagents, Hooks)", "Prompt Engineering", "LLM Pipelines (Claude, GPT-4)", "Human-in-the-Loop Agents"],
   },
   {
     title: "Programming & Scripting",
@@ -16,12 +16,12 @@ const skillCategories = [
   {
     title: "Data Engineering & ML",
     icon: "DB",
-    skills: ["Supabase (PostgREST)", "PostgreSQL", "MySQL", "SQLite", "Pandas", "NumPy", "Scikit-learn", "PyTorch", "TensorFlow"],
+    skills: ["Supabase (PostgREST)", "PostgreSQL", "Metabase", "MySQL", "SQLite", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "PyTorch", "TensorFlow"],
   },
   {
     title: "Infrastructure & DevOps",
     icon: ">>",
-    skills: ["Docker & Compose", "Nginx (Reverse Proxy, SSL)", "Linux Admin (Ubuntu/Debian)", "GitHub Org Management", "SSH Hardening", "Cron Orchestration"],
+    skills: ["Docker & Compose", "Nginx (Reverse Proxy, SSL)", "Linux Admin (Ubuntu/Debian)", "GitHub Org Management", "SSH Hardening", "Cron Orchestration", "Git / GitHub PR Workflow", "GitHub Actions", "Dependabot"],
   },
   {
     title: "Security & Compliance",
@@ -36,12 +36,12 @@ const skillCategories = [
   {
     title: "Frontend & Design",
     icon: "UI",
-    skills: ["React", "Vue.js", "HTML5", "CSS3 / SCSS", "Tailwind CSS", "UI/UX Design", "Figma"],
+    skills: ["React", "Vue.js", "HTML5", "CSS3 / SCSS", "Tailwind CSS", "Shopify Liquid", "UI/UX Design", "Figma"],
   },
   {
-    title: "Tools & Others",
+    title: "APIs & Integrations",
     icon: "++",
-    skills: ["Git", "GitHub Actions", "Dependabot", "Swagger", "Arduino", "Matplotlib", "Seaborn"],
+    skills: ["Shopify Admin / Storefront", "Amazon SP-API + Ads API", "Meta Graph API", "YouTube Data API", "Klaviyo", "Instantly", "ClickUp API", "Google Sheets / Drive"],
   },
 ];
 

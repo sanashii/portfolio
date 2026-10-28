@@ -73,9 +73,9 @@ export default function Hero() {
         {/* Stats bar — Fallout S.P.E.C.I.A.L. style */}
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
           {[
-            { label: "Workflows Built", value: "50+" },
-            { label: "Pipelines Shipped", value: "10+" },
-            { label: "Records Processed", value: "4.3K+" },
+            { label: "Commits Shipped", value: "1.7K+" },
+            { label: "Jobs On-Call", value: "100+" },
+            { label: "Subsystems Built", value: "15" },
             { label: "Cost Reduced", value: "97%" },
           ].map((stat) => (
             <div key={stat.label} className="pip-boy-border px-3 sm:px-4 py-2 rounded-sm relative glow-border-anim" style={{ animationDelay: `${Math.random() * 2}s` }}>
