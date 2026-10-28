@@ -227,13 +227,19 @@ export function DataStream({ className = "" }: { className?: string }) {
     const generateLine = () =>
       Array.from({ length: 24 }, () => chars[Math.floor(Math.random() * chars.length)]).join(" ");
 
-    setLines(Array.from({ length: 12 }, generateLine));
+    const tick = () =>
+      setLines((prev) =>
+        prev.length ? [...prev.slice(1), generateLine()] : Array.from({ length: 12 }, generateLine)
+      );
 
-    const interval = setInterval(() => {
-      setLines((prev) => [...prev.slice(1), generateLine()]);
-    }, 300);
+    // Fill on the next tick rather than synchronously in the effect body
+    const initial = setTimeout(tick, 0);
+    const interval = setInterval(tick, 300);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearTimeout(initial);
+      clearInterval(interval);
+    };
   }, []);
 
   return (

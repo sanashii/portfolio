@@ -1,4 +1,4 @@
-import { RadiationSymbol, CircuitLines, WebPattern } from "./VaultBoyDecor";
+import { RadiationSymbol, CircuitLines } from "./VaultBoyDecor";
 import { ParticleField, GlitchText, TypingText, RadarScanner, DataStream } from "./Animations";
 
 export default function Hero() {
@@ -77,8 +77,8 @@ export default function Hero() {
             { label: "Jobs On-Call", value: "100+" },
             { label: "Subsystems Built", value: "15" },
             { label: "Cost Reduced", value: "97%" },
-          ].map((stat) => (
-            <div key={stat.label} className="pip-boy-border px-3 sm:px-4 py-2 rounded-sm relative glow-border-anim" style={{ animationDelay: `${Math.random() * 2}s` }}>
+          ].map((stat, i) => (
+            <div key={stat.label} className="pip-boy-border px-3 sm:px-4 py-2 rounded-sm relative glow-border-anim" style={{ animationDelay: `${(i * 0.7) % 2}s` }}>
               <div className="absolute top-1 left-1 w-1 h-1 bg-vault-blue/30 rounded-full" />
               <div className="absolute top-1 right-1 w-1 h-1 bg-vault-blue/30 rounded-full" />
               <div className="absolute bottom-1 left-1 w-1 h-1 bg-vault-blue/30 rounded-full" />
